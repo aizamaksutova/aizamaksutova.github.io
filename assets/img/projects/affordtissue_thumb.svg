@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#0d3d6b"/>
+  <!-- Dark endoscopic scene bg -->
+  <ellipse cx="200" cy="150" rx="160" ry="120" fill="#1a2a3a" opacity="0.9"/>
+  <!-- Tissue ellipses -->
+  <ellipse cx="210" cy="160" rx="120" ry="80" fill="#3d2b1f" opacity="0.9"/>
+  <ellipse cx="215" cy="165" rx="90" ry="58" fill="#5c3d28"/>
+  <!-- Affordance heatmap -->
+  <ellipse cx="200" cy="155" rx="60" ry="40" fill="#e74c3c" opacity="0.35"/>
+  <ellipse cx="205" cy="152" rx="36" ry="22" fill="#e74c3c" opacity="0.55"/>
+  <ellipse cx="202" cy="150" rx="18" ry="11" fill="#ff6b35" opacity="0.85"/>
+  <ellipse cx="201" cy="149" rx="7" ry="4" fill="#ffdd57" opacity="0.95"/>
+  <!-- Surgical tool -->
+  <line x1="100" y1="80" x2="195" y2="148" stroke="#d0d0d0" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="196" cy="149" rx="6" ry="3" fill="#aaa" transform="rotate(-30 196 149)"/>
+  <!-- Title bar -->
+  <rect x="0" y="255" width="400" height="45" fill="rgba(0,0,0,0.65)"/>
+  <text x="200" y="278" font-family="Georgia, serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">AffordTissue</text>
+  <text x="200" y="294" font-family="Arial, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">Dense Affordance Prediction for Surgical Tissue</text>
+</svg>

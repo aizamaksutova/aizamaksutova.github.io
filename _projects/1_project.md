@@ -1,81 +1,66 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: AffordTissue
+description: Dense affordance prediction for tool-action specific tissue interaction in surgical robotics
+img: assets/img/projects/affordtissue_thumb.svg
 importance: 1
-category: work
+category: research
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/projects/affordtissue_thumb.svg" title="AffordTissue framework overview" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
+<div class="caption">
+  AffordTissue produces spatially dense affordance maps conditioned on surgical tool type and action,
+  enabling intraoperative guidance for robotic and AI-assisted surgery.
+  <em>(Placeholder — replace with actual figures from the paper.)</em>
+</div>
 
-{% endraw %}
+## Overview
+
+**AffordTissue** addresses a fundamental challenge in surgical robotics: given an endoscopic view of a surgical field,
+where should a specific tool engage with tissue, and how?
+Rather than coarse region proposals, AffordTissue produces **dense, pixel-wise affordance maps** conditioned jointly
+on the instrument type (e.g., grasper, scissors, cautery) and the desired action (e.g., grasp, cut, coagulate).
+
+This level of spatial precision is critical for:
+- Autonomous robotic subtask execution (e.g., tissue grasping, blunt dissection)
+- Surgeon decision support and intraoperative guidance overlays
+- Data-efficient imitation learning from demonstration
+
+## Method
+
+AffordTissue frames tissue affordance estimation as a **dense prediction problem** over the endoscopic image.
+We condition the network on a structured action-tool specification and leverage:
+
+- **Geometric priors** — depth/surface normal estimates from monocular endoscopic video
+- **Texture and appearance cues** — learned from endoscopic imagery of phantom and ex-vivo tissue
+- **Action-conditioned cross-attention** — to fuse tool-action context with spatial image features
+
+The output is a per-pixel affordance probability map indicating where the specified tool-action interaction is feasible and safe.
+
+## Results
+
+AffordTissue was validated on phantom tissue setups and ex-vivo datasets, demonstrating:
+
+- State-of-the-art localization accuracy for tool-tissue interaction regions
+- Generalisation across instrument types not seen during training
+- Potential for real-time deployment in a surgical workstation pipeline
+
+## Citation
+
+{% cite maksutova2026affordtissue %}
+
+## Links
+
+- [arXiv Preprint](https://arxiv.org/abs/2604.01371){:target="_blank"}
+- **Code**: _Coming soon_
+
+## Team
+
+**Aiza Maksutova**, Lalithkumar Seenivasan, Hao Ding, Jiru Xu, Chenhao Yu, Chenyan Jing, Yiqing Shen, Mathias Unberath
+
+*Unberath Lab, Johns Hopkins University*

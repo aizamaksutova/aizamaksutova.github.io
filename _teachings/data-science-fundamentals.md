@@ -1,97 +1,42 @@
 ---
 layout: course
-title: Data Science Fundamentals
-description: This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.
-instructor: Prof. Data
-year: 2024
-term: Spring
-location: Science Building, Room 202
-time: Mondays and Wednesdays, 2:00-3:30 PM
-course_id: data-science-fundamentals
-schedule:
-  - week: 1
-    date: Feb 5
-    topic: Introduction to Data Science
-    description: Overview of the data science workflow and key concepts.
-    materials:
-      - name: Syllabus
-        url: /assets/pdf/example_pdf.pdf
-      - name: Slides
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 2
-    date: Feb 12
-    topic: Data Collection and APIs
-    description: Methods for collecting data through APIs, web scraping, and databases.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 1
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 3
-    date: Feb 19
-    topic: Data Cleaning and Preprocessing
-    description: Techniques for handling missing values, outliers, and data transformation.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Coding Lab
-        url: https://github.com/
-
-  - week: 4
-    date: Feb 26
-    topic: Exploratory Data Analysis
-    description: Descriptive statistics, visualization, and pattern discovery.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 2
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 5
-    date: Mar 4
-    topic: Statistical Analysis
-    description: Hypothesis testing, confidence intervals, and statistical inference.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Review Materials
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 6
-    date: Mar 11
-    topic: Data Visualization
-    description: Principles and tools for effective data visualization.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 3
-        url: /assets/pdf/example_pdf.pdf
+title: Deep Learning
+description: >
+  Graduate course covering modern deep learning theory and practice, including convolutional
+  networks, transformers, diffusion models, and self-supervised learning, with applications
+  to vision, language, and scientific domains.
+instructor: "TODO: instructor name"  # TODO: fill in
+year: 2025  # TODO: update to correct year
+term: Spring  # TODO: update to correct term
+location: Johns Hopkins University
+time: "TODO: add meeting time"  # TODO: fill in
+role: Teaching Assistant
+course_id: deep-learning
 ---
 
 ## Course Overview
 
-This course provides a comprehensive introduction to data science principles and practices. Students will:
+Deep Learning is a graduate-level course that provides rigorous coverage of modern neural network
+architectures and training methodology. Students develop both theoretical foundations and practical
+implementation skills through assignments, projects, and hands-on lab sessions.
 
-- Learn the end-to-end data science workflow
-- Gain practical experience with data manipulation tools
-- Develop skills in data visualization and communication
-- Apply statistical methods to derive insights from data
+As a **Teaching Assistant**, my responsibilities include:
+
+- Holding office hours to help students debug implementations and understand theory
+- Grading programming assignments and project reports
+- Preparing coding notebooks and supplementary problem sets
+- Answering questions on the course discussion board
+
+## Key Topics
+
+- Neural network fundamentals: MLP, backpropagation, optimisation
+- Convolutional neural networks for image recognition and detection
+- Recurrent networks, attention mechanisms, and Transformers
+- Generative models: VAEs, GANs, diffusion models
+- Self-supervised and contrastive learning
+- Fine-tuning and adaptation of large pre-trained models
 
 ## Prerequisites
 
-- Basic programming knowledge (preferably in Python)
-- Introductory statistics
-- Comfort with basic algebra
-
-## Textbooks
-
-- "Python for Data Analysis" by Wes McKinney
-- "Data Science from Scratch" by Joel Grus
-
-## Grading
-
-- Assignments: 50%
-- Project: 40%
-- Participation: 10%
+- Probability, statistics, and linear algebra at the graduate level
+- Programming experience in Python; familiarity with PyTorch or TensorFlow

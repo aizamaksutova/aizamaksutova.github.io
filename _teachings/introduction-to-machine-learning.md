@@ -1,113 +1,44 @@
 ---
 layout: course
-title: Introduction to Machine Learning
-description: This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.
-instructor: Prof. Example
-year: 2023
-term: Fall
-location: Main Campus, Room 301
-time: Tuesdays and Thursdays, 10:00-11:30 AM
-course_id: intro-machine-learning
-schedule:
-  - week: 1
-    date: Sept 5
-    topic: Course Introduction
-    description: Overview of machine learning, course structure, and expectations.
-    materials:
-      - name: Syllabus
-        url: /assets/pdf/example_pdf.pdf
-      - name: Slides
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 2
-    date: Sept 12
-    topic: Linear Regression
-    description: Introduction to linear regression, gradient descent, and model evaluation.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 1
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 3
-    date: Sept 19
-    topic: Classification
-    description: Logistic regression, decision boundaries, and multi-class classification.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Coding Lab
-        url: https://github.com/
-
-  - week: 4
-    date: Sept 26
-    topic: Decision Trees and Random Forests
-    description: Tree-based methods, ensemble learning, and feature importance.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 2
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 5
-    date: Oct 3
-    topic: Support Vector Machines
-    description: Margin maximization, kernel methods, and support vectors.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Review Materials
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 6
-    date: Oct 10
-    topic: Midterm Exam
-    description: Covers weeks 1-5.
-
-  - week: 7
-    date: Oct 17
-    topic: Neural Networks Fundamentals
-    description: Perceptrons, multilayer networks, and backpropagation.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Assignment 3
-        url: /assets/pdf/example_pdf.pdf
-
-  - week: 8
-    date: Oct 24
-    topic: Deep Learning
-    description: Convolutional neural networks, recurrent neural networks, and applications.
-    materials:
-      - name: Lecture Notes
-        url: /assets/pdf/example_pdf.pdf
-      - name: Coding Lab
-        url: https://github.com/
+title: Computer Integrated Surgery I
+description: >
+  Graduate-level course covering mathematical, algorithmic, and engineering foundations of
+  computer-integrated surgical systems. Topics include rigid body transformations, image-guided surgery,
+  robotic kinematics, registration, and intraoperative sensing.
+instructor: Prof. Mathias Unberath  # TODO: confirm instructor name for the specific semester
+year: 2025  # TODO: update to correct year
+term: Fall  # TODO: update to correct term
+location: Johns Hopkins University
+time: "TODO: add meeting time"  # TODO: fill in
+role: Teaching Assistant
+course_id: computer-integrated-surgery-i
 ---
 
 ## Course Overview
 
-This introductory course on machine learning covers fundamental concepts and algorithms in the field. By the end of this course, students will be able to:
+Computer Integrated Surgery I (CIS I) introduces graduate students to the computational and
+engineering underpinnings of modern surgical robotics and image-guided interventions. The course
+draws on rigid body mechanics, probability theory, and computer vision to develop principled methods
+for intraoperative sensing, registration, and robotic control.
 
-- Understand key machine learning paradigms and concepts
-- Implement basic machine learning algorithms
-- Evaluate and compare model performance
-- Apply machine learning techniques to real-world problems
+As a **Teaching Assistant**, my responsibilities include:
+
+- Holding weekly office hours to support students with assignments and projects
+- Grading homework sets and providing detailed written feedback
+- Assisting in laboratory sessions involving 3D reconstruction and robotic calibration
+- Preparing supplementary materials and clarifying lecture content
+
+## Key Topics
+
+- Rigid body transformations and homogeneous coordinates
+- Point set registration (ICP, Procrustes analysis)
+- Stereo vision and 3D reconstruction for surgical scenes
+- Robot kinematics and workspace analysis
+- Uncertainty propagation in geometric pipelines
+- Image-guided navigation and augmented reality overlays
 
 ## Prerequisites
 
-- Basic knowledge of linear algebra and calculus
-- Programming experience in Python
-- Probability and statistics fundamentals
-
-## Textbooks
-
-- Primary: "Machine Learning: A Probabilistic Perspective" by Kevin Murphy
-- Reference: "Pattern Recognition and Machine Learning" by Christopher Bishop
-
-## Grading
-
-- Assignments: 40%
-- Midterm Exam: 20%
-- Final Project: 30%
-- Participation: 10%
+- Linear algebra and multivariate calculus
+- Programming experience in Python or C++
+- Background in probability and statistics recommended

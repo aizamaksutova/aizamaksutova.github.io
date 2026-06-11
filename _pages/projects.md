@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Research projects in surgical perception, affordance learning, and generative models for the OR.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [research, work]
 horizontal: false
 ---
 

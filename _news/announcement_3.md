@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-11-25 09:00:00-0500
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+New preprint! **Counterfactual World Models via Digital Twin-conditioned Video Diffusion** — reasoning about hypothetical surgical interventions. [arXiv:2511.17481](https://arxiv.org/abs/2511.17481)

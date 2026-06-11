@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#0d1a2a"/>
+  <!-- 3D point cloud representation -->
+  <g opacity="0.7">
+    <!-- Scattered points forming a tissue surface -->
+    <circle cx="150" cy="160" r="3" fill="#4a90d9"/>
+    <circle cx="165" cy="148" r="3" fill="#4a90d9"/>
+    <circle cx="180" cy="140" r="3" fill="#4a90d9"/>
+    <circle cx="200" cy="135" r="4" fill="#e74c3c"/>
+    <circle cx="220" cy="138" r="4" fill="#e74c3c"/>
+    <circle cx="238" cy="144" r="3" fill="#e74c3c"/>
+    <circle cx="252" cy="155" r="3" fill="#f39c12"/>
+    <circle cx="260" cy="168" r="3" fill="#4a90d9"/>
+    <circle cx="245" cy="178" r="3" fill="#4a90d9"/>
+    <circle cx="225" cy="185" r="3" fill="#4a90d9"/>
+    <circle cx="205" cy="188" r="4" fill="#f39c12"/>
+    <circle cx="185" cy="183" r="3" fill="#4a90d9"/>
+    <circle cx="168" cy="173" r="3" fill="#4a90d9"/>
+    <!-- Inner layer -->
+    <circle cx="190" cy="158" r="3" fill="#e74c3c"/>
+    <circle cx="210" cy="152" r="5" fill="#c0392b"/>
+    <circle cx="230" cy="158" r="4" fill="#e74c3c"/>
+    <circle cx="225" cy="172" r="4" fill="#f39c12"/>
+    <circle cx="205" cy="175" r="3" fill="#f39c12"/>
+    <!-- Connecting mesh lines -->
+    <line x1="150" y1="160" x2="165" y2="148" stroke="#4a90d9" stroke-width="0.5" opacity="0.4"/>
+    <line x1="165" y1="148" x2="180" y2="140" stroke="#4a90d9" stroke-width="0.5" opacity="0.4"/>
+    <line x1="180" y1="140" x2="200" y2="135" stroke="#7fb3e8" stroke-width="0.5" opacity="0.4"/>
+    <line x1="200" y1="135" x2="220" y2="138" stroke="#e74c3c" stroke-width="0.5" opacity="0.4"/>
+    <line x1="220" y1="138" x2="238" y2="144" stroke="#e74c3c" stroke-width="0.5" opacity="0.4"/>
+    <line x1="238" y1="144" x2="252" y2="155" stroke="#f39c12" stroke-width="0.5" opacity="0.4"/>
+    <line x1="150" y1="160" x2="168" y2="173" stroke="#4a90d9" stroke-width="0.5" opacity="0.3"/>
+    <line x1="260" y1="168" x2="245" y2="178" stroke="#4a90d9" stroke-width="0.5" opacity="0.3"/>
+  </g>
+  <!-- Axis labels -->
+  <line x1="80" y1="220" x2="130" y2="220" stroke="#666" stroke-width="1"/>
+  <line x1="80" y1="220" x2="80" y2="170" stroke="#666" stroke-width="1"/>
+  <line x1="80" y1="220" x2="55" y2="240" stroke="#666" stroke-width="1"/>
+  <text x="135" y="224" font-family="monospace" font-size="9" fill="#aaa">x</text>
+  <text x="76" y="165" font-family="monospace" font-size="9" fill="#aaa">z</text>
+  <text x="45" y="244" font-family="monospace" font-size="9" fill="#aaa">y</text>
+  <!-- Title bar -->
+  <rect x="0" y="255" width="400" height="45" fill="rgba(0,0,0,0.7)"/>
+  <text x="200" y="277" font-family="Georgia, serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">3D Affordance Learning</text>
+  <text x="200" y="293" font-family="Arial, sans-serif" font-size="10" fill="#aaa" text-anchor="middle">Spatial Affordance from Point Cloud Tissue Geometry</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#f0f4f8" rx="8"/>
+  <!-- Text conditioning box -->
+  <rect x="20" y="50" width="110" height="90" rx="6" fill="#fff3cd" stroke="#f0ad4e" stroke-width="1.5"/>
+  <text x="75" y="72" font-family="monospace" font-size="9" fill="#856404" text-anchor="middle" font-weight="bold">Scene Description</text>
+  <text x="75" y="90" font-family="monospace" font-size="8" fill="#856404" text-anchor="middle">"Dissection phase"</text>
+  <text x="75" y="103" font-family="monospace" font-size="8" fill="#856404" text-anchor="middle">"Grasper + scissors"</text>
+  <text x="75" y="116" font-family="monospace" font-size="8" fill="#856404" text-anchor="middle">"Rare: bleeding"</text>
+  <!-- Arrow: condition → diffusion model -->
+  <line x1="130" y1="95" x2="155" y2="95" stroke="#555" stroke-width="2"/>
+  <polygon points="152,90 160,95 152,100" fill="#555"/>
+  <!-- Diffusion model box -->
+  <rect x="158" y="62" width="84" height="66" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="200" y="87" font-family="monospace" font-size="9" fill="#155724" text-anchor="middle" font-weight="bold">Video</text>
+  <text x="200" y="100" font-family="monospace" font-size="9" fill="#155724" text-anchor="middle" font-weight="bold">Diffusion</text>
+  <text x="200" y="118" font-family="monospace" font-size="8" fill="#155724" text-anchor="middle">Model</text>
+  <!-- Arrow: model → output frames -->
+  <line x1="242" y1="95" x2="262" y2="95" stroke="#555" stroke-width="2"/>
+  <polygon points="259,90 267,95 259,100" fill="#555"/>
+  <!-- Synthesized frames (stacked) -->
+  <rect x="268" y="48" width="90" height="60" rx="4" fill="#cce5ff" stroke="#4a90d9" stroke-width="1" opacity="0.6"/>
+  <rect x="272" y="54" width="90" height="60" rx="4" fill="#b8d4f0" stroke="#4a90d9" stroke-width="1" opacity="0.7"/>
+  <rect x="276" y="60" width="90" height="60" rx="4" fill="#a0c4ef" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="321" y="86" font-family="monospace" font-size="9" fill="#1a5fa8" text-anchor="middle">Synthetic</text>
+  <text x="321" y="99" font-family="monospace" font-size="9" fill="#1a5fa8" text-anchor="middle">OR Video</text>
+  <!-- Label -->
+  <text x="200" y="175" font-family="Georgia, serif" font-size="12" fill="#2c3e50" text-anchor="middle" font-weight="bold">Controllable OR Video Synthesis</text>
+  <text x="200" y="193" font-family="Georgia, serif" font-size="10" fill="#666" text-anchor="middle">Routine &amp; Rare Surgical Events · arXiv 2602.21365</text>
+</svg>

@@ -7,14 +7,14 @@ first_name: Aiza
 middle_name: R.
 last_name: Maksutova
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach me is via email. I am actively looking for PhD positions starting Fall 2026.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Aiza R. Maksutova — MS Robotics student at Johns Hopkins University (Unberath Lab).
+  Research in surgical perception, affordance learning, and generative models for the operating room.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: robotics, surgical robotics, medical AI, computer vision, affordance learning, generative models, Johns Hopkins, PhD applicant
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -122,8 +122,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Aiza Maksutova # blog_name will be displayed in your blog page
+blog_description: Notes on surgical robotics, perception, and generative AI
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

@@ -1,81 +1,66 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://www.wikipedia.org/
+title: Controllable Surgical Video Synthesis
+description: Video diffusion model for generating photorealistic routine and rare OR events at scale
+img: assets/img/projects/endosynth_thumb.svg
 importance: 3
-category: work
+category: research
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/projects/endosynth_thumb.svg" title="Controllable OR video synthesis overview" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
+<div class="caption">
+  Our controllable video diffusion model synthesizes photorealistic surgical scenes conditioned on
+  structured OR event descriptions, enabling scalable data generation for surgical AI training.
+  <em>(Placeholder — replace with actual figures from the paper.)</em>
+</div>
 
-{% endraw %}
+## Overview
+
+Annotated surgical video is scarce, expensive to collect, and subject to strict privacy regulations.
+**Controllable Surgical Video Synthesis** addresses this bottleneck by building a generative model
+capable of producing photorealistic operating room video — including both **routine events** (standard
+procedural steps) and **rare events** (unexpected complications, uncommon anatomical variations) —
+at scale, conditioned on structured scene and event descriptions.
+
+This work enables:
+- **Scalable data augmentation** for training surgical perception models without requiring real patient data
+- **Long-tail scenario coverage** — synthesizing rare events that are underrepresented in real datasets
+- **Downstream model improvement** — perception models trained with synthetic data showing improved performance on real video
+
+## Method
+
+The framework is built on a **latent video diffusion model** that accepts structured conditioning signals encoding:
+
+- Procedural phase (e.g., dissection, clipping, retrieval)
+- Instrument type and position
+- Tissue state and anatomical context
+- Event rarity label (routine vs. rare complication)
+
+The model is trained on curated surgical video collections and evaluated on multiple benchmarks of
+surgical phase recognition and instrument detection, using synthetic data as a training supplement.
+
+## Clinical Relevance
+
+Rare surgical events — such as accidental organ perforations or unexpected bleeding — are critical
+failure modes for AI-assisted systems yet are vastly underrepresented in training data. This work
+provides a systematic path to closing that gap through controlled, on-demand generation.
+
+## Citation
+
+{% cite schneider2026towards %}
+
+## Links
+
+- [arXiv Preprint](https://arxiv.org/abs/2602.21365){:target="_blank"}
+
+## Team
+
+Dominik Schneider, Lalithkumar Seenivasan, Sampath Rapuri, Vishalroshan Anil, **Aiza Maksutova**,
+Yiqing Shen, Jan Emily Mangulabnan, Hao Ding, Jose L. Porras, Masaru Ishii, et al.
+
+*Unberath Lab, Johns Hopkins University*
