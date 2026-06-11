@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#f0f4f8" rx="8"/>
+  <!-- Endoscope camera icon -->
+  <rect x="60" y="70" width="100" height="70" rx="6" fill="#4a90d9" opacity="0.8"/>
+  <circle cx="110" cy="105" r="22" fill="#1a5fa8"/>
+  <circle cx="110" cy="105" r="14" fill="#0d3d6b"/>
+  <circle cx="110" cy="105" r="6" fill="#4a90d9"/>
+  <!-- Tissue / heatmap region -->
+  <ellipse cx="260" cy="125" rx="90" ry="55" fill="#e8e0d8" stroke="#c9b89a" stroke-width="2"/>
+  <!-- Affordance heatmap overlay -->
+  <ellipse cx="255" cy="118" rx="40" ry="25" fill="#e74c3c" opacity="0.5"/>
+  <ellipse cx="265" cy="122" rx="22" ry="14" fill="#e74c3c" opacity="0.7"/>
+  <ellipse cx="262" cy="120" rx="10" ry="7" fill="#c0392b" opacity="0.9"/>
+  <!-- Surgical tool -->
+  <line x1="160" y1="105" x2="240" y2="115" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="237,108 248,115 237,122" fill="#2c3e50"/>
+  <!-- Label -->
+  <text x="200" y="210" font-family="Georgia, serif" font-size="13" fill="#2c3e50" text-anchor="middle" font-weight="bold">AffordTissue</text>
+  <text x="200" y="228" font-family="Georgia, serif" font-size="10" fill="#666" text-anchor="middle">Dense Affordance Prediction · arXiv 2604.01371</text>
+</svg>
